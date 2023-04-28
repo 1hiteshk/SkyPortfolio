@@ -164,7 +164,7 @@ html {
     z-index: 0;
     display: flex;
     align-items: center;
-    margin-left: -13.5rem;
+    margin-left: -22rem;
   }
 }
 /***************************************** Header******************************** */
@@ -181,8 +181,8 @@ header {
   list-style: none;
   padding: 5rem;
   box-sizing: border-box;
-  animation: fade-up 500ms ease-in-out;
-  animation-delay: 1.9s;
+  /* animation: fade-up 500ms ease-in-out;
+  animation-delay: 1.9s; */
 }
 
 .nav {
