@@ -963,6 +963,9 @@ div[class*="Info"] :nth-child(2) {
     font-size: 5rem;
     margin-bottom: 2rem;
   }
+  .projectCardContent{
+    line-height: 1.6;
+  }
 }
 
 /* **************************Connect************************************************ */
