@@ -855,6 +855,7 @@ div[class*="Info"] :nth-child(2) {
 }
 .projectCard {
   color: white;
+  cursor: pointer;
   background-position: center;
   background-size: cover;
   /* padding: 1.5rem; */
@@ -868,29 +869,29 @@ div[class*="Info"] :nth-child(2) {
   transition: transform 250ms ease, box-shadow 250ms ease;
 }
 .projectCard:nth-child(1) {
-  background: url(../Images/disney-1024-1.webp);
+  background: url(../Images/netflix-bg.webp);
   background-position: center;
   background-size: cover;
 }
 .projectCard:nth-child(2) {
-  background: url(../Images/netflix.jpeg.jpg);
+  background: url(../Images/hitcode-bg.webp);
   background-position: center;
   background-size: cover;
 }
 .projectCard:nth-child(3) {
-  background: url(../Images/Instagram.jpeg.jpg);
+  background: url(../Images/growwstonks-bg.webp);
   background-position: center;
   background-size: cover;
 }
 .projectCard:nth-child(4) {
-  background: url(../Images/chat.jpg);
+  background: url(../Images/foodystar-bg.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .projectCard:nth-child(5) {
-  background: url(../Images/1000_F_305642704_WkMfdjyVKufNvaENA8NfGc6CAoKEpedC.jpg);
+  background: url(../Images/youtube-bg.jpg);
   background-position: right;
-  background-size: cover;
+  background-size: contain;
 }
 .projectCard:hover {
   transform: scale(1.02);
@@ -1047,6 +1048,17 @@ div[class*="Info"] :nth-child(2) {
 .lowerBalls:focus {
   box-shadow: 0 0 2rem 2rem var(--backGroundColor2);
   transform: scale(1.02);
+}
+.hire{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.resume{
+  color: #fff;
+  padding-top: 7px;
+  font-size: 12px;
 }
 .codingLinks {
   font-size: 2.5rem;
