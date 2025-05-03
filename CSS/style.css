@@ -164,7 +164,9 @@ html {
     z-index: 0;
     display: flex;
     align-items: center;
-    margin-left: -22rem;
+    /* margin-left: -22rem; */
+    width: 100%;
+    justify-content: center;
   }
 }
 /***************************************** Header******************************** */
@@ -226,7 +228,7 @@ header {
   letter-spacing: 0.5px;
 }
 .span {
-  color: var(--fontColor3);
+  color: var(--fontColor3) !important;
 }
 
 .mobile-navbar-button {
@@ -558,7 +560,7 @@ header {
 .aboutInfo :nth-child(2) {
   color: var(--fontColor1);
   margin: 2rem 0;
-  font-size: 3rem;
+  font-size: 2.4rem !important;
 }
 .aboutInfo :nth-child(3) {
   color: var(--fontColor2);
@@ -574,6 +576,11 @@ header {
 @media (hover) {
   .aboutExtra {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 786px) {
+  .aboutExtra {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .education {
@@ -671,8 +678,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 14px;
   margin: 0.5rem;
   width: 75%;
+  overflow: auto;
+  scrollbar-width: none;
   /* flex-direction: column; */
 }
 .skillsTitle {
@@ -686,15 +696,19 @@ header {
 .skillsTitle h3 {
   font-weight: bold;
 }
-.tops a {
+.tops > a,p {
   text-decoration: none;
   color: var(--fontColor2);
   font-weight: bold;
   letter-spacing: 0.8px;
+  cursor: pointer;
 }
 .tops > img {
-  margin-top: -2.5rem;
+ /*  margin-top: -2.5rem; */
   margin-bottom: -1.8rem;
+}
+.tops > i {
+  margin-top: 2.5rem;
 }
 
 .tops {
@@ -712,19 +726,19 @@ header {
   /* transition: transform ease-in-out 0.1s; */
 }
 
-.skills li:nth-child(1) {
+.skills li:nth-child(10) {
   color: #e3803c;
 }
-.skills li:nth-child(2) {
+.skills li:nth-child(11) {
   color: rgb(1 106 177);
 }
-.skills li:nth-child(3) {
+.skills li:nth-child(4) {
   color: #ead41c;
 }
-.skills li:nth-child(4) {
+.skills li:nth-child(2) {
   color: #00cdf2;
 }
-.skills li:nth-child(5) {
+.skills li:nth-child(12) {
   color: #8d0ff1;
 }
 .skills li:nth-child(6) {
@@ -786,8 +800,9 @@ header {
     margin: auto;
   }
   .tops {
-    margin: 2.2rem 0;
+   /*  margin: 2rem 0; */
     /* padding: 2rem; */
+    justify-content: space-around;
   }
 }
 /*********************************Project *******************************/
@@ -874,21 +889,31 @@ div[class*="Info"] :nth-child(2) {
   background-size: cover;
 }
 .projectCard:nth-child(2) {
-  background: url(../Images/hitcode-bg.webp);
+  background: url('https://lform.com/cms/resources/media/2023/01/23-01-january-how-social-media-and-web-development-work-together.jpg');
   background-position: center;
   background-size: cover;
 }
 .projectCard:nth-child(3) {
-  background: url(../Images/growwstonks-bg.webp);
+  background: url(../Images/hitcode-bg.webp);
   background-position: center;
   background-size: cover;
 }
 .projectCard:nth-child(4) {
+  background: url(../Images/growwstonks-bg.webp);
+  background-position: center;
+  background-size: cover;
+}
+.projectCard:nth-child(5) {
   background: url(../Images/foodystar-bg.png);
   background-position: center;
   background-size: contain;
 }
-.projectCard:nth-child(5) {
+.projectCard:nth-child(6) {
+  background: url('https://png.pngtree.com/thumb_back/fh260/background/20220427/pngtree-tiny-business-people-and-manager-at-tasks-and-goals-accomplishment-chart-image_1091427.jpg');
+  background-position: right;
+  background-size: cover;
+}
+.projectCard:nth-child(7) {
   background: url(../Images/youtube-bg.jpg);
   background-position: right;
   background-size: contain;
@@ -931,6 +956,7 @@ div[class*="Info"] :nth-child(2) {
 .projectCardTitle {
   /* margin: 1rem 0; */
   font-size: 3rem;
+  font-weight: 600;
   /* color: var(--fontColor3); */
 }
 .grid-col-span-2 .projectCardTitle {
@@ -940,6 +966,7 @@ div[class*="Info"] :nth-child(2) {
   /* color: var(--fontColor3); */
   font-size: 2rem;
   /* color: var(--fontColor2); */
+  color: #FDFCFD;
   font-weight: bold;
 }
 
