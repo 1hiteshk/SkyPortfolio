@@ -1083,6 +1083,7 @@ div[class*="Info"] :nth-child(2) {
   text-decoration: none;
 }
 .resume{
+  text-align: center;
   color: #fff;
   padding-top: 7px;
   font-size: 12px;
