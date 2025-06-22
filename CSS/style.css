@@ -5,6 +5,7 @@ html::-webkit-scrollbar {
 :root {
   --backGroundColor1: #222a36;
   --backGroundColor2: #2a3443;
+  --backGroundHero3: #1D1D1D;
   --fontColor1: white;
   --fontColor2: #6d7074;
   --fontColor3: #3aafc9;
@@ -65,7 +66,7 @@ html {
   /* overflow: hidden; */
   /* width: 100%; */
   padding: 0 9rem;
-  background-color: var(--backGroundColor2);
+  background-color: var(--backGroundHero3);
   /* background-image: url(../Images/IMG_20220507_221922-removebg\ \(2\).png);
   background-position: center;
   background-size: contain;
@@ -176,7 +177,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--backGroundColor2);
+  background-color: var(--backGroundHero3);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -212,8 +213,8 @@ header {
   transition: 0.3s ease-in-out;
 }
 .navLinks a:hover:after {
-  width: 80%;
-  border-radius: 0;
+  width: 70%;
+  border-radius: 50%;
 }
 .navLinks a:hover,
 .navLinks a:active {
@@ -290,6 +291,9 @@ header {
   }
   .active .mobile-navbar-button .cross {
     display: block;
+  }
+  .navLinks a:hover:after {
+    width: 85%;
   }
 }
 /********************************Hero Section*********************/
@@ -383,7 +387,7 @@ header {
 
 .scrollDown {
   position: absolute;
-  left: 110rem;
+  right: 10rem;
   bottom: 12rem;
   display: flex;
   margin: auto;
@@ -401,11 +405,11 @@ header {
   opacity: 0;
   position: fixed;
   bottom: 3rem;
-  right: 3rem;
-  font-size: 3rem;
+  right: 2rem;
+  font-size: 2rem;
   border: 0.2rem solid var(--ballColor2);
   padding: 1.4rem 1.5rem;
-  border-radius: 100%;
+  border-radius: 50%;
   color: var(--ballColor);
   z-index: 1500000000;
   transition: all 0.1s linear;
@@ -480,13 +484,74 @@ header {
     font-size: 7.5rem;
   }
   .scrollDown {
-    left: 40rem;
-    bottom: 3rem;
+    right: 3rem;
+    bottom: 6rem;
   }
   .callus1 {
     bottom: 9rem;
   }
 }
+@media (min-width: 769px) and (max-width: 970px){
+   .ball1 {
+    top: 20rem;
+    left: 8rem;
+    width: 13rem;
+    height: 13rem;
+  }
+  .ball2 {
+    bottom: 16rem;
+    right: 2rem;
+    width: 11rem;
+    height: 11rem;
+  }
+   .scrollDown {
+    right: 3rem;
+    bottom: 6rem;
+  }
+}
+
+/* Meteor Animation */
+.meteor-container {
+ /*  position: relative; */
+}
+
+.meteor {
+  position: absolute;
+  top: -5px;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: whitesmoke; /* slate-500 */
+  border-radius: 9999px;
+  transform: rotate(215deg);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+  animation-name: meteor;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.trail {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 50px;
+  background: linear-gradient(to right, whitesmoke, transparent);
+  transform: translateY(-50%);
+  z-index: -10;
+}
+
+@keyframes meteor {
+    0% {
+    transform: translate(0, 0) rotate(215deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(360px, 100vh) rotate(215deg);
+    opacity: 0;
+  }
+}
+
 /********************************About Us*************************************/
 
 .aboutSection {
@@ -1343,6 +1408,22 @@ transform: translateX(-50%) rotate(45deg);
   .codeImg {
     height: 32px;
     width: 32px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 970px){
+  .connect {
+    gap:10px;
+  }
+  .connect1{
+    width: 45%;
+  }
+  .connect2{
+    width: 45%;
+  }
+  .letsconnect > h1 {
+    font-size: 8rem;
+    line-height: 8rem;
   }
 }
 
