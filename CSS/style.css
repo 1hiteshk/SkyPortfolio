@@ -1330,6 +1330,11 @@ transform: translateX(-50%) rotate(45deg);
   color: #fff;
   text-decoration: none;
 }
+/* .narutoGIF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .narutoGIF img {
   height: 40rem;
   width: 40rem;
